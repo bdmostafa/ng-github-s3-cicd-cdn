@@ -6,11 +6,11 @@ phases:
     commands:
       - echo "Installing dependencies..."
       - npm install
-      - npm install -g @angular/cli
+      - npm install -g @angular/cli@16
   build:
     commands:
       - echo "Building Angular project..."
-      - ng build
+      - ng build --prod
   post_build:
     commands:
       - echo "Updating files in the S3 bucket..."
