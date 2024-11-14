@@ -35,5 +35,5 @@ jobs:
 
     - name: Deploy
       if: success()
-      run: aws s3 sync ./dist/ng-github-s3-cicd-cdn s3://ng-s3-cicd-cloudfare
+      run: aws s3 sync ./dist/ng-github-s3-cicd-cdn/browser s3://ng-s3-cicd-cloudfare
 
